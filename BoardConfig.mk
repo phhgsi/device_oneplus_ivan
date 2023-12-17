@@ -54,9 +54,6 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 # Fingerprint
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 # Kernel
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
@@ -68,6 +65,10 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz
 
 # Display
 TARGET_SCREEN_DENSITY := 480
+
+# Manifest
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
 
 # Partitions
 BOARD_USES_METADATA_PARTITION := true
