@@ -51,6 +51,9 @@ TARGET_NO_BOOTLOADER := true
 # DTBO
 BOARD_KERNEL_SEPARATED_DTBO := true
 
+# Fingerprint
+TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
