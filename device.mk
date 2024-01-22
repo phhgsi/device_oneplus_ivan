@@ -203,6 +203,7 @@ PRODUCT_PACKAGES += \
     init.modem.rc \
     init.mt6877.rc \
     init.mt6877.usb.rc \
+    init.target.rc \
     init.project.rc \
     init.sensor_2_0.rc \
     meta_init.connectivity.common.rc \
