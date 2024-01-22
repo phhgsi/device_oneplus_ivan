@@ -1,4 +1,5 @@
-# ossi start
+# GateKeeper
+ro.hardware.gatekeeper=beanpod
 ###########
 ro.oem_unlock_supported=1
 ro.vendor.mtk_aod_support=1
