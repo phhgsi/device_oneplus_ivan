@@ -114,8 +114,17 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    CarrierConfigResCommon \
+    FrameworksResTarget \
+    OPlusFrameworksResCommon \
+    OPlusSettingsResCommon \
+    OPlusSystemUIResCommon \
+    WifiResTarget
 
-# overlays
+# Overlays
+$(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
+
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
