@@ -1,20 +1,3 @@
-ns.
-Filter changed files
-  3 changes: 3 additions & 0 deletions3  
-device.mk
-@@ -259,6 +259,9 @@ PRODUCT_PACKAGES += \
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
-
-# Properties
-include $(LOCAL_PATH)/vendor_logtag.mk
-
-# Radio
-PRODUCT_PACKAGES += \
-    android.hardware.radio.config@1.3.vendor \
- 258 changes: 258 additions & 0 deletions258  
-vendor_logtag.mk
-@@ -0,0 +1,258 @@
 ifeq (eng,$(TARGET_BUILD_VARIANT))
 VENDOR_LOG_LEVEL=I
 else
