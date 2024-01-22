@@ -9,6 +9,8 @@ ro.vendor.connsys.dedicated.log=1
 vendor.connsys.driver.ready=no
 # GateKeeper
 ro.hardware.gatekeeper=beanpod
+# Sensors
+ro.vendor.mtk.sensor.support=yes
 # Wi-Fi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
