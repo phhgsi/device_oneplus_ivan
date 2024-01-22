@@ -175,6 +175,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/power,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio@1.6.vendor
+
 # Rootdir
 PRODUCT_PACKAGES += \
     factory_init.connectivity.common.rc \
