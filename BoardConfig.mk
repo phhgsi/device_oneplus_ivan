@@ -121,6 +121,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
+include hardware/oplus/sepolicy/qti/SEPolicy.mk
 
 # SPL
 VENDOR_SECURITY_PATCH := 2023-12-01
