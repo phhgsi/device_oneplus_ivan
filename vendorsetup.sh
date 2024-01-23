@@ -7,9 +7,6 @@ echo -e "${color}Applying patches${end}"
 sleep 1
 
 
-# kernel
-git clone https://github.com/oneplus-mt6877/android_kernel_oneplus_ivan_4.14.git -b main kernel/oneplus/ivan
-
 # vendor
 git clone https://github.com/Notganesh/vendor_oneplus_ivan.git -b main vendor/oneplus/ivan
 
