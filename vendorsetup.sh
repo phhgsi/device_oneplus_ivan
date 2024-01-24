@@ -7,9 +7,6 @@ echo -e "${color}Applying patches${end}"
 sleep 1
 
 
-# vendor
-git clone https://github.com/Notganesh/vendor_oneplus_ivan.git -b main vendor/oneplus/ivan
-
 # hardware
 git clone https://github.com/oneplus-mt6877/android_hardware_mediatek.git -b lineage-20 hardware/mediatek
 
