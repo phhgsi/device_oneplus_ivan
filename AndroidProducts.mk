@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_ivan.mk
+    $(LOCAL_DIR)/lineage_ivan.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_ivan-user \
-    derp_ivan-userdebug \
-    derp_ivan-eng
+    lineage_ivan-user \
+    lineage_ivan-userdebug \
+    lineage_ivan-eng
