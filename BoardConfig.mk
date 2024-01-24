@@ -71,11 +71,11 @@ BOARD_KERNEL_CMDLINE := \
     bootopt=64S3,32N2,64N2 \
     androidboot.tee_type=2 \
     androidboot.init_fatal_reboot_target=recovery
-#TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
-#TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
-#BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_INCLUDE_RECOVERY_DTBO := true
-#TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_FORCE_PREBUILT_KERNEL := true
 BOARD_BOOTIMG_HEADER_VERSION := 2
 KERNEL_LD := LD=ld.lld
 BOARD_KERNEL_BASE := 0x40078000
@@ -87,10 +87,10 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
-BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_IMAGE_NAME := kernel
 #PRODUCT_COPY_FILES += \
-  #  $(DEVICE_PATH)/prebuilt/dtb.img:$(TARGET_COPY_OUT)/dtb.img \
-    #$(DEVICE_PATH)/prebuilt/kernel:kernel
+    $(DEVICE_PATH)/prebuilt/dtb.img:$(TARGET_COPY_OUT)/dtb.img \
+    $(DEVICE_PATH)/prebuilt/kernel:kernel
 
 # Display
 TARGET_SCREEN_DENSITY := 480
