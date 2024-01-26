@@ -57,7 +57,9 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 
 # Fingerprint
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
-
+# kernel
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/prebuilt/kernel:out/target/product/generic/kernel
 
 # Kernel
 TARGET_KERNEL_CLANG_COMPILE := true
